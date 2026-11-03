@@ -132,6 +132,43 @@ section.dark .ctanote{color:#9FB0CF}
 .expert ul{list-style:none;padding:0;margin:0}.expert li{padding:11px 0 11px 34px;position:relative;border-bottom:1px solid #284374}
 .expert li:before{content:"\2713";position:absolute;left:4px;top:10px;color:#4ADE80;font-weight:900;font-size:18px}.expert li b{color:#fff}
 @media(max-width:900px){.hero h1{font-size:42px}.hero .sub{font-size:19px}.dead,.expert{grid-template-columns:1fr}.bigline{font-size:30px}.cost li{font-size:17px}}
+
+/* v3: $100 bill redeem top */
+.redeem{background:radial-gradient(1200px 500px at 20% 0%,#163a7a 0%,#0B1B3A 60%);color:#fff;padding:44px 0 56px}
+.redeem .kicker{color:#FFD166}
+.redeem h1{font-size:60px;line-height:1.04;margin:0 0 14px;color:#fff;letter-spacing:-.02em}
+.redeem .sub{font-size:21px;font-weight:600;color:#DCE6FF;max-width:640px;margin:0 0 22px}
+.rgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:start}
+.coupon{border:3px dashed #FFD166;border-radius:16px;padding:18px 20px;background:rgba(255,209,102,.08);display:flex;gap:16px;align-items:center;margin:0 0 22px}
+.coupon .bill{flex:none;width:96px;height:56px;border-radius:8px;background:linear-gradient(135deg,#cfe8c9,#8fbf86);color:#1d4d1a;font-weight:900;font-size:24px;display:flex;align-items:center;justify-content:center;border:2px solid #5d8f55}
+.coupon b{display:block;font-size:19px;color:#FFD166}.coupon span{color:#E8EEFF;font-size:15px}
+.steps3{list-style:none;padding:0;margin:0 0 20px;counter-reset:s}
+.steps3 li{counter-increment:s;padding:7px 0 7px 40px;position:relative;font-weight:600;color:#fff}
+.steps3 li:before{content:counter(s);position:absolute;left:0;top:5px;width:28px;height:28px;border-radius:50%;background:#FFD166;color:#0B1B3A;font-weight:900;display:flex;align-items:center;justify-content:center}
+.checkbox{background:#fff;color:var(--ink);border-radius:18px;padding:20px;box-shadow:0 18px 40px rgba(0,0,0,.35);position:relative}
+.demo-tag{position:absolute;top:-12px;right:16px;background:var(--red);color:#fff;font-weight:900;font-size:12px;letter-spacing:.08em;padding:5px 10px;border-radius:999px}
+.checkbox h3{margin:0 0 4px;font-size:20px;color:var(--navy)}.checkbox .hint{font-size:13px;color:var(--muted);margin:0 0 12px}
+.field{display:flex;gap:8px}.field input{flex:1;min-width:0;border:2px solid var(--line);border-radius:10px;padding:13px 12px;font-size:16px;background:#F8FAFD;color:#7a8499}
+.field button{border:0;border-radius:10px;background:#9AA6BC;color:#fff;font-weight:800;padding:0 14px;font-size:15px;cursor:not-allowed}
+.stage{margin-top:16px;border:2px solid var(--line);border-radius:14px;overflow:hidden}
+.stage .bar{display:flex;justify-content:space-between;align-items:center;background:var(--grey);padding:9px 12px;font-weight:800;font-size:13px;color:var(--navy)}
+.ex{background:var(--amber);color:#fff;font-size:11px;letter-spacing:.08em;padding:3px 8px;border-radius:999px}
+.stage .body{padding:12px}
+.snap{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:14px;margin:0 0 10px}
+.snap div{display:flex;gap:10px;justify-content:space-between;border-bottom:1px dashed var(--line);padding:4px 0}.snap i{font-style:normal;color:var(--muted)}
+.ok{color:var(--green);font-weight:800}.warn{color:var(--amber);font-weight:800}.bad{color:var(--red);font-weight:800}
+.help{list-style:none;padding:0;margin:0;font-size:14px}.help li{padding:4px 0 4px 22px;position:relative}.help li:before{content:"\2192";position:absolute;left:0;color:var(--blue);font-weight:900}
+.stage2 .body p{margin:0 0 10px;font-size:14px}
+.pending{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin-top:8px}.pending:before{content:"";width:12px;height:12px;border-radius:50%;border:3px solid var(--line);border-top-color:var(--blue)}
+.redeem .ctanote{color:#C9D6F5}
+@media(max-width:900px){.rgrid{grid-template-columns:1fr}.redeem h1{font-size:40px}.redeem .sub{font-size:18px}.snap{grid-template-columns:1fr}.field{flex-direction:column}.field button{padding:13px}}
+.hero h2.htitle{font-size:64px;line-height:1.02;margin:0 0 14px;letter-spacing:-.02em}
+@media(max-width:900px){.hero h2.htitle{font-size:42px}}
+.pivot{background:#FFF8E6;border-top:4px solid #FFD166;padding:52px 0}
+.pivot h2{font-size:38px;line-height:1.1;margin:0 0 14px;color:var(--navy)}.pivot p{font-size:18px;color:var(--ink)}
+.cadence{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 22px}.cadence div{background:#fff;border:2px solid #F2DFA8;border-radius:14px;padding:14px}
+.cadence b{display:block;color:var(--blue);font-size:15px;text-transform:uppercase;letter-spacing:.05em}.cadence span{font-weight:600;color:var(--navy)}
+@media(max-width:900px){.pivot h2{font-size:28px}.cadence{grid-template-columns:1fr}}
 </style></head><body>
 
 <header><div class="wrap">
@@ -141,16 +178,84 @@ section.dark .ctanote{color:#9FB0CF}
 </div></header>
 
 <main id="top">
+<!-- V3 TOP: $100 bill redeem + two-stage live check (MOCK) -->
+<section class="redeem" id="redeem"><div class="wrap rgrid">
+ <div>
+  <div class="kicker">You kept the $100 bill. Good. Here's why I gave it to you.</div>
+  <h1>As promised, I want to do something for you.</h1>
+  <p class="sub">You do great work. So why isn't the phone ringing?<br>Somewhere in your town, right now, a customer is searching for exactly what you do. And they're finding someone else.<br>Type your business in below. In seconds, you'll see what they see.</p>
+  <div class="coupon"><div class="bill">$100</div><div><b>Redeem your bill: your free Google profile snapshot</b><span>It's my gift to you. Instant, on this page. No card, no catch.</span></div></div>
+  <ol class="steps3">
+   <li>Type your business name and town.</li>
+   <li>See yourself the way your customers see you. Right now.</li>
+   <li>Get your free full report in your inbox in a few minutes.</li>
+  </ol>
+  <div class="ctas"><a class="btn xl" href="mailto:hello@tacticalsi.us?subject=Start%20Dominate">Start Dominate &middot; $799/mo</a></div>
+  <p class="ctanote">One offer: $799/month on a 12-month commitment ($9,588 total).</p>
+ </div>
+ <div class="checkbox" aria-label="Demo placeholder: not functional">
+  <div class="demo-tag">DEMO &middot; NOT LIVE</div>
+  <h3>Run your free Google profile check</h3>
+  <p class="hint">Placeholder only. The live version will look up your public Google listing.</p>
+  <div class="field"><input disabled placeholder="Your business name + town"><button disabled>Check my profile</button></div>
+  <div class="stage">
+   <div class="bar"><span>Stage 1 &middot; Instant snapshot</span><span class="ex">EXAMPLE DATA</span></div>
+   <div class="body">
+    <div class="snap">
+     <div><i>Business</i><b>Your Business Name</b></div>
+     <div><i>Rating</i><span class="ok">4.6 &#9733;</span></div>
+     <div><i>Reviews</i><span class="warn">23</span></div>
+     <div><i>Categories</i><span class="warn">1 set</span></div>
+     <div><i>Hours</i><span class="ok">Listed</span></div>
+     <div><i>Website</i><span class="bad">Missing</span></div>
+     <div><i>Photos</i><span class="warn">Few</span></div>
+     <div><i>Status</i><span class="ok">Open</span></div>
+    </div>
+    <b style="font-size:14px;color:var(--navy)">Every gap here is a call going to someone else. Here's what we'd do about it, every week (example):</b>
+    <ul class="help">
+     <li>Every week: fresh Google posts and photos, so your profile never goes stale</li>
+     <li>After every job: a review request, with replies checked by a person</li>
+     <li>Ongoing: hours, services and listings kept up to date and matching</li>
+     <li>Every month: a report with a ranking map, an AI-search check and reviews gained</li>
+    </ul>
+   </div>
+  </div>
+  <div class="stage stage2">
+   <div class="bar"><span>Stage 2 &middot; Your free full report</span><span class="ex">EXAMPLE</span></div>
+   <div class="body">
+    <p>Your full report checks your map rankings, top competitors and AI visibility. It takes a few minutes, so we'll email it to you.</p>
+    <div class="field"><input disabled placeholder="Your email"><button disabled>Send my full report</button></div>
+    <div class="pending">Example status: your full report is on its way to your inbox in a few minutes.</div>
+   </div>
+  </div>
+ </div>
+</div></section>
+
+<!-- V3 PIVOT: the free snapshot is the hook; management is the job -->
+<section class="pivot" id="pivot"><div class="wrap narrow">
+ <div class="kicker">Now the honest part</div>
+ <h2>Seeing the problem is easy. Fixing it every single week, forever, while you run a business? That's the part that breaks people.</h2>
+ <p>You've probably fixed it before. Updated the hours. Asked for a few reviews. Then a busy month hit, and it all went quiet again.<br>That's not your fault. You're out doing the work. Google itself says complete, accurate details and reviews help your local ranking, and that work never stops.<br><b>So hand it to us. We handle it every week. You answer the phone and do the work you're proud of.</b></p>
+ <div class="cadence">
+  <div><b>Every week</b><span>Google posts and photos from your jobs</span></div>
+  <div><b>After every job</b><span>A review request, plus replies checked by a person</span></div>
+  <div><b>Ongoing</b><span>Profile details, directory listings, Facebook and Instagram kept current</span></div>
+  <div><b>Every month</b><span>Four short videos and a report: ranking map where supported, AI-search check, reviews gained</span></div>
+ </div>
+ <div class="ctas"><a class="btn xl" href="mailto:hello@tacticalsi.us?subject=Start%20Dominate">Start Dominate &middot; $799/mo</a></div>
+ <p class="ctanote">$799/month &middot; 12-month commitment &middot; $9,588 total</p>
+</div></section>
+
 <!-- HERO: the problem, hard -->
 <section class="hero" id="hero"><div class="wrap">
  <div>
-  <div class="kicker">For local service owners stuck at zero</div>
-  <h1>&ldquo;Google search is dead?&rdquo;</h1>
-  <p class="sub">For a local business, the old way of being found is over. Customers now get one AI answer and a map. If you're not in them, you don't exist.</p>
+  <div class="kicker">Here's what nobody told you</div>
+  <h2 class="htitle">&ldquo;Google search is dead?&rdquo;</h2>
+  <p class="sub">The way customers find you changed. They ask an AI. They open the Map. They get a few names. If yours isn't one of them, to that customer, you don't exist.</p>
   <ul class="pain">
-   <li>Ask an AI for the best one in your town, and you're not named.</li>
-   <li>Open the Map, and your competitors are pinned. You're not.</li>
-   <li>The call goes to them, and you never knew it was there.</li>
+   <li>They ask for the best one in town. Your name never comes up.</li>
+   <li>They open the Map. Your competitor's pin is right there. Yours isn't.</li>
+   <li>The call goes to them. You never even knew it was yours to lose.</li>
   </ul>
   <div class="ctas"><a class="btn xl" href="mailto:hello@tacticalsi.us?subject=Start%20Dominate">Start Dominate &middot; $799/mo</a></div>
   <p class="ctanote">One offer: $799/month on a 12-month commitment ($9,588 total).</p>
@@ -178,13 +283,14 @@ section.dark .ctanote{color:#9FB0CF}
 <section id="cost"><div class="wrap narrow">
  <div class="kicker">What it costs you</div>
  <h2>Invisible isn't &ldquo;ranked low.&rdquo; Invisible is not there at all.</h2>
- <p class="muted">Your business has been around for years. Many local shops like yours still fail a basic Google and AI search check. The AI era is here, and being found has never mattered more.</p>
+ <p class="muted">You've put years into this business. Early mornings. Jobs done right. Customers who'd hire you again tomorrow. And the next customer can't find you. That's the part that stings.</p>
  <ul class="cost">
   <li>The customer who asked an AI for help this morning<small>got a name. It wasn't yours.</small></li>
   <li>The neighbor who searched "near me" on the Map<small>tapped a competitor's pin, because yours wasn't there or was half empty.</small></li>
   <li>A profile with missing hours, no photos and old reviews<small>gives Google little to show, and little to recommend.</small></li>
   <li>A website alone<small>doesn't put you on the Map. Your Google Business Profile does.</small></li>
-  <li>Every month you wait<small>is another month the same few businesses get named instead of you.</small></li>
+  <li>That truck you see on jobs that should have been yours<small>isn't better than you. It's just easier to find.</small></li>
+ <li>Every month you wait<small>is another month the same few businesses get named instead of you.</small></li>
  </ul>
  <div class="ctas"><a class="btn xl" href="mailto:hello@tacticalsi.us?subject=Start%20Dominate">Start Dominate &middot; $799/mo</a></div>
 </div></section>
@@ -192,8 +298,8 @@ section.dark .ctanote{color:#9FB0CF}
 <!-- PROBLEM 3: why owners stay stuck -->
 <section class="alt" id="stuck"><div class="wrap">
  <div class="kicker">Sound familiar?</div>
- <h2>You're not lazy. Nobody showed you the new rules.</h2>
- <p class="muted narrow">You're good at the work. But a Google profile, reviews, photos, posts and directory listings are a second job, and every guide online assumes you already know the first step.</p>
+ <h2>You're not lazy. You're busy doing the actual work.</h2>
+ <p class="muted narrow">You're great at what you do. But a Google profile, reviews, photos, posts and listings are a second job nobody has time for. So it slips. And every week it slips, someone else gets the call.</p>
  <div class="feel">
   <div class="card"><h3>"I don't even know where to start."</h3><p>Google verification, categories, services, photos, reviews, listings. Tactical Si puts it in order and tells you the one thing to do next.</p></div>
   <div class="card"><h3>"I tried it myself and gave up."</h3><p>Half-built profiles are common. Tactical Si starts by checking what you already have, so nothing you did is wasted.</p></div>
@@ -377,8 +483,8 @@ section.dark .ctanote{color:#9FB0CF}
 
 <!-- FINAL CTA -->
 <section class="final dark" id="start"><div class="wrap narrow">
- <p class="bigline">Search moved on. <em style="color:#4ADE80">Get found where customers look now.</em></p>
- <p>Tactical Si sets up and runs your Google Business Profile every month, and walks you through every step.</p>
+ <p class="bigline">You do the work. <em style="color:#4ADE80">We make sure they find you.</em></p>
+ <p>Picture it: your name in the answer, your pin on the Map, your profile looking as good as your work. Tactical Si handles it every week. You just answer the phone and do the job.</p>
  <div class="ctas"><a class="btn xl" href="mailto:hello@tacticalsi.us?subject=Start%20Dominate">Start Dominate &middot; $799/mo</a></div>
  <p class="ctanote">$799/month on a 12-month commitment ($9,588 total).</p>
  <p class="ctanote">Tactical Si &middot; 112 N Flowers Mill Rd #2014, Langhorne, PA 19047 &middot; <a style="color:#fff" href="mailto:hello@tacticalsi.us">hello@tacticalsi.us</a></p>
